@@ -1,0 +1,59 @@
+{
+    "parent": "ccap:ore_collect/overworld/amethyst/get_amethyst_shard",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:budding_amethyst"
+        },
+        "title": {
+            "text": "자수정 콜렉터",
+            "color": "white"
+        },
+        "description": {
+            "text": "모든 자수정 봉우리와 군집을 얻으세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_small_amethyst_bud": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:small_amethyst_bud" }
+                ]
+            }
+        },
+        "get_medium_amethyst_bud": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:medium_amethyst_bud" }
+                ]
+            }
+        },
+        "get_large_amethyst_bud": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:large_amethyst_bud" }
+                ]
+            }
+        },
+        "get_amethyst_cluster": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:amethyst_cluster" }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 150,
+        "loot": [ "ccap:reward/overworld/amethyst/get_all_amethyst_bud" ] 
+    }
+}

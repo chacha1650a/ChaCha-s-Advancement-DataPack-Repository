@@ -1,28 +1,29 @@
 {
+    "parent": "ccap:ore_collect/overworld/lapis/get_lapis",
+
     "display": {
         "icon": {
-            "id": "minecraft:stone"
+            "id": "minecraft:lapis_block"
         },
         "title": {
-            "text":"채광 카테고리",
-            "color": "gray"
+            "text": "견습 마법사",
+            "color": "white"
         },
         "description": {
-            "text":"Minecraft에 존재하는 모든 광물을 모아보세요!",
-            "color": "dark_gray"
+            "text": "청금석 블록을 얻으세요",
+            "color": "green"
         },
         "frame": "task",
         "announce_to_chat": true,
         "show_toast": true,
-        "hidden": false,
-        "background": "minecraft:block/stone"
+        "hidden": false
     },
     "criteria": {
-        "ore_category": {
+        "get_lapis_block": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
-                    { "items": "minecraft:cobblestone" }
+                    { "items": "minecraft:lapis_block" }
                 ]
             }
         }

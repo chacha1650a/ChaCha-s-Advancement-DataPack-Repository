@@ -1,0 +1,35 @@
+{
+    "parent": "ccap:ore_collect/overworld/lapis/get_lapis_block",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:lapis_block"
+        },
+        "title": {
+            "text": "숙련된 마법사",
+            "color": "white"
+        },
+        "description": {
+            "text": "청금석 블록 64개를 얻으세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_lapis_block_64": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:lapis_block","count": 64 }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100,
+        "loot": [ "ccap:reward/overworld/lapis/get_lapis_block_64" ]
+    }
+}

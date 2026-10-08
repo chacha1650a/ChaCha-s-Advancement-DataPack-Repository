@@ -5,18 +5,18 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:raw_gold_block",
+                    "name": "minecraft:budding_amethyst",
                     "modifier": [
                         {
                             "type": "minecraft:set_name",
                             "target": "item_name",
-                            "name": { "text":"금 덩어리","color":"gold" }
+                            "name": { "text":"자수정은 블링블링","color":"light_purple" }
                         },
                         {
                             "type": "minecraft:set_lore",
                             "mode": "append",
                             "lore": [
-                                { "text":"깨물어보면 꽤 아플거에요!","color":"dark_purple","italic": false },
+                                { "text":"자수정은 원래 빛나지 않나요?","color":"dark_purple","italic": false },
                                 { "text":"채광 카테고리 보상","color":"dark_gray","italic": false }
                             ]
                         },
@@ -27,7 +27,7 @@
                         {
                             "type": "minecraft:set_enchantments",
                             "enchantments": {
-                                "fortune": 3
+                                "minecraft:fortune": 3
                             }
                         },
                         {

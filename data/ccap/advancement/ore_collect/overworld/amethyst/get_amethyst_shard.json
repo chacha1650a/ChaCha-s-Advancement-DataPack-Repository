@@ -1,28 +1,29 @@
 {
+    "parent": "ccap:ore_collect/overworld/overworld",
+
     "display": {
         "icon": {
-            "id": "minecraft:stone"
+            "id": "minecraft:amethyst_shard"
         },
         "title": {
-            "text":"채광 카테고리",
-            "color": "gray"
+            "text": "꽤 비싸보이는걸?",
+            "color": "white"
         },
         "description": {
-            "text":"Minecraft에 존재하는 모든 광물을 모아보세요!",
-            "color": "dark_gray"
+            "text": "자수정 조각을 얻으세요",
+            "color": "green"
         },
         "frame": "task",
         "announce_to_chat": true,
         "show_toast": true,
-        "hidden": false,
-        "background": "minecraft:block/stone"
+        "hidden": false
     },
     "criteria": {
-        "ore_category": {
+        "get_amethyst_shard": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
-                    { "items": "minecraft:cobblestone" }
+                    { "items": "minecraft:amethyst_shard" }
                 ]
             }
         }
