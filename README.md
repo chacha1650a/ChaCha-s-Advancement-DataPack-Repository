@@ -1,6 +1,6 @@
 해당 발전과제 데이터팩은 
-BlazeAndCave's AdvancementPack 에서 영감을
-받아서 제작을 하게 된 데이터팩으로 아직 개발중입니다.
+BlazeAndCave's AdvancementPack 에서 
+영감을 받아서 제작을 하게 된 데이터팩으로 아직 개발중입니다.
 
 현재 개발중인 기능 : 채광 카테고리
 
