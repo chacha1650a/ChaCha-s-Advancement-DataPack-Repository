@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:gold_block",
+                    "name": "minecraft:raw_gold_block",
                     "modifier": [
                         {
                             "type": "minecraft:set_name",
@@ -16,9 +16,29 @@
                             "type": "minecraft:set_lore",
                             "mode": "append",
                             "lore": [
-                                { "text": "진짜로 물면 꽤 아플거에요!\n","color": "dark_purple","italic": false },
+                                { "text": "깨물어보면 꽤 아플거에요!","color": "dark_purple","italic": false },
                                 { "text": "채광 카테고리 보상","color": "dark_gray","italic": false }
                             ]
+                        },
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "fortune": 3
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:enchantments"
+                                    ]
+                                }
+                            }
                         }
                     ]
                 }

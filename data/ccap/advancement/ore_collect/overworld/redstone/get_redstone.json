@@ -1,17 +1,17 @@
 {
-    "parent": "ccap:ore_category",
+    "parent": "ccap:ore_collect/overworld/overworld",
     
     "display": {
         "icon": {
             "id": "minecraft:redstone"
         },
         "title": {
-            "text": "빨간색 반짝이",
-            "color": "green"
+            "text": "누가 코피라도 흘렸어?",
+            "color": "white"
         },
         "description": {
             "text":"레드스톤을 얻으세요",
-            "color": "white"
+            "color": "green"
         },
         "frame": "task",
         "announce_to_chat": true,
@@ -19,7 +19,7 @@
         "hidden": false
     },
     "criteria": {
-        "get_iron_ingot": {
+        "get_redstone": {
             "trigger": "inventory_changed",
             "conditions": {
                 "items": [

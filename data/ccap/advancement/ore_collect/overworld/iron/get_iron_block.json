@@ -1,5 +1,5 @@
 {
-    "parent": "ccap:ore_collect/iron/get_iron_ingot",
+    "parent": "ccap:ore_collect/overworld/iron/get_iron_ingot",
     
     "display": {
         "icon": {
@@ -7,11 +7,11 @@
         },
         "title": {
             "text": "철강 사업",
-            "color": "green"
+            "color": "white"
         },
         "description": {
             "text": "철 블록을 얻으세요",
-            "color": "white"
+            "color": "green"
         },
         "frame": "task",
         "announce_to_chat": true,

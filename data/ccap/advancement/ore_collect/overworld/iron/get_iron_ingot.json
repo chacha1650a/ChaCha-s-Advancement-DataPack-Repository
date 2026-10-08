@@ -1,5 +1,5 @@
 {
-    "parent": "ccap:ore_collect/iron/get_iron_nugget",
+    "parent": "ccap:ore_collect/overworld/iron/get_iron_nugget",
 
     "display": {
         "icon": {
@@ -7,10 +7,11 @@
         },
         "title": {
             "text": "따끈한 철괴로구나",
-            "color": "green"
+            "color": "white"
         },
         "description": {
-            "text": "철 주괴를 얻으세요"
+            "text": "철 주괴를 얻으세요",
+            "color": "green"
         },
         "frame": "task",
         "announce_to_chat": true,

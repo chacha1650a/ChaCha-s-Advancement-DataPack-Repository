@@ -1,5 +1,5 @@
 {
-    "parent": "ccap:ore_collect/coal/get_coal",
+    "parent": "ccap:ore_collect/overworld/coal/get_coal",
     
     "display": {
         "icon": {
@@ -7,11 +7,11 @@
         },
         "title": {
             "text":"연료 뭉치",
-            "color": "green"
+            "color": "white"
         },
         "description": {
             "text": "석탄 블록을 얻으세요",
-            "color": "white"
+            "color": "green"
         },
         "frame": "task",
         "announce_to_chat": true,

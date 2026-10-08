@@ -5,20 +5,40 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:iron_block",
+                    "name": "minecraft:raw_iron_block",
                     "modifier": [
                         {
-                            "type": "set_name",
+                            "type": "minecraft:set_name",
                             "target": "item_name",
                             "name": {"text": "I'm Ironman","color": "gray"}
                         },
                         {
-                            "type": "set_lore",
+                            "type": "minecraft:set_lore",
                             "mode": "append",
                             "lore": [
-                                { "text":"진짜 당신 아이언맨에요?\n","color": "dark_purple","italic": false },
+                                { "text":"당신, 진짜 아이언맨에요?","color": "dark_purple","italic": false },
                                 { "text": "광물 카테고리 보상","color": "dark_gray","italic": false }
                             ]
+                        },
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "set_enchantments",
+                            "enchantments": {
+                                "minecraft:fortune": 3
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:enchantments"
+                                    ]
+                                }
+                            }
                         }
                     ]
                 }

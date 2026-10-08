@@ -1,16 +1,16 @@
 {
-    "parent": "ccap:ore_collect/overworld/gold/get_gold_block",
-    
+    "parent": "ccap:ore_collect/overworld/redstone/get_redstone_block",
+
     "display": {
         "icon": {
-            "id": "minecraft:gold_block"
+            "id": "minecraft:redstone_block"
         },
         "title": {
-            "text": "GOLD RUSH",
+            "text": "레드스톤 공장주",
             "color": "white"
         },
         "description": {
-            "text": "금 블록 64개를 얻으세요",
+            "text": "레드스톤 블록 64개를 얻으세요",
             "color": "dark_purple"
         },
         "frame": "challenge",
@@ -19,17 +19,17 @@
         "hidden": false
     },
     "criteria": {
-        "get_gold_block_64": {
+        "get_redstone_block_64": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
-                    { "items": "minecraft:gold_block","count": 64 }
+                    { "items": "minecraft:redstone_block","count": 64 }
                 ]
             }
         }
     },
     "rewards": {
         "experience": 100,
-        "loot": [ "ccap:reward/overworld/gold/get_gold_block_64" ]
+        "loot": [ "ccap:reward/overworld/redstone/get_redstone_block_64" ]
     }
 }

@@ -5,11 +5,11 @@
         },
         "title": {
             "text":"광질 카테고리",
-            "color": "dark_gray"
+            "color": "gray"
         },
         "description": {
             "text":"Minecraft에 존재하는 모든 광물을 모아보세요!",
-            "color": "gray"
+            "color": "dark_gray"
         },
         "frame": "task",
         "announce_to_chat": true,

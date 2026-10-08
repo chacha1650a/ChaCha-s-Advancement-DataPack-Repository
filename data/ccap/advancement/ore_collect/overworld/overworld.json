@@ -7,11 +7,11 @@
         },
         "title": {
             "text": "오버월드",
-            "color": "dark_green"
+            "color": "white"
         },
         "description": {
             "text": "오버월드에서 나오는 광물을 전부 모으세요!",
-            "color": "white"
+            "color": "dark_green"
         },
         "frame": "goal",
         "announce_to_chat": false,

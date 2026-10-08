@@ -1,5 +1,5 @@
 {
-    "parent": "ccap:ore_collect/coal/get_coal_block",
+    "parent": "ccap:ore_collect/overworld/coal/get_coal_block",
     
     "display": {
         "icon": {
@@ -7,12 +7,12 @@
         },
         "title": {
             "text": "열기구 이륙 준비!",
-            "color": "dark_purple"
+            "color": "white"
         },
-        "description": [
-            { "text":"석탄 블록 64개를 얻으세요\n","color": "white" },
-            { "text":"진짜로 열기구를 띄울 순 없답니다, 하하!","color":"dark_purple"}
-        ],
+        "description": { 
+            "text":"석탄 블록 64개를 얻으세요"
+            ,"color": "dark_purple" 
+        },
         "frame": "challenge",
         "announce_to_chat": true,
         "show_toast": true,
