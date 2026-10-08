@@ -1,0 +1,35 @@
+{
+    "parent": "ccap:ore_collect/coal/get_coal_block",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:coal_block"
+        },
+        "title": {
+            "text": "열기구 이륙 준비!",
+            "color": "dark_purple"
+        },
+        "description": [
+            { "text":"석탄 블록 64개를 얻으세요\n","color": "white" },
+            { "text":"진짜로 열기구를 띄울 순 없답니다, 하하!","color":"dark_purple"}
+        ],
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_coal_block_64": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:coal_block","count": 64 }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100,
+        "loot": [ "ccap:reward/overworld/coal/get_coal_block_64" ]
+    }
+}

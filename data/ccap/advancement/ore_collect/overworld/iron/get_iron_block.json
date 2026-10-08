@@ -1,0 +1,31 @@
+{
+    "parent": "ccap:ore_collect/iron/get_iron_ingot",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_block"
+        },
+        "title": {
+            "text": "철강 사업",
+            "color": "green"
+        },
+        "description": {
+            "text": "철 블록을 얻으세요",
+            "color": "white"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_iron_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:iron_block" }
+                ]
+            }
+        }
+    }
+}

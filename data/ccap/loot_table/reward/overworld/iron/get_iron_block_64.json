@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_block",
+                    "modifier": [
+                        {
+                            "type": "set_name",
+                            "target": "item_name",
+                            "name": {"text": "I'm Ironman","color": "gray"}
+                        },
+                        {
+                            "type": "set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text":"진짜 당신 아이언맨에요?\n","color": "dark_purple","italic": false },
+                                { "text": "광물 카테고리 보상","color": "dark_gray","italic": false }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

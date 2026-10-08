@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_block",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_name",
+                            "target": "item_name",
+                            "name": { "text":"금 덩어리","color":"gold" }
+                        },
+                        {
+                            "type": "minecraft:set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text": "진짜로 물면 꽤 아플거에요!\n","color": "dark_purple","italic": false },
+                                { "text": "채광 카테고리 보상","color": "dark_gray","italic": false }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

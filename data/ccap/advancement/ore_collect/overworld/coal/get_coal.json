@@ -1,0 +1,31 @@
+{
+    "parent": "ccap:ore_category",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:coal"
+        },
+        "title": {
+            "text": "뭐야 이 검은건?",
+            "color":"green"
+        },
+        "description": {
+            "text": "석탄을 얻으세요",
+            "color": "white"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_coal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:coal" }
+                ]
+            }
+        }
+    }
+}

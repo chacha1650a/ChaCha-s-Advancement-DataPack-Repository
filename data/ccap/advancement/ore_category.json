@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:stone"
+        },
+        "title": {
+            "text":"광질 카테고리",
+            "color": "dark_gray"
+        },
+        "description": {
+            "text":"Minecraft에 존재하는 모든 광물을 모아보세요!",
+            "color": "gray"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false,
+        "background": "minecraft:block/stone"
+    },
+    "criteria": {
+        "ore_category": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:cobblestone" }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "parent": "ccap:ore_category",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:redstone"
+        },
+        "title": {
+            "text": "빨간색 반짝이",
+            "color": "green"
+        },
+        "description": {
+            "text":"레드스톤을 얻으세요",
+            "color": "white"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_iron_ingot": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:redstone" }
+                ]
+            }
+        }
+    }
+}

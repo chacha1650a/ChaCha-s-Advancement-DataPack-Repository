@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal_block",
+                    "modifier": [
+                        {
+                            "type": "set_name",
+                            "target": "item_name",
+                            "name": { "text":"열기구 연료","color":"dark_gray" }
+                        },
+                        {
+                            "type": "set_lore",
+                            "mode": "append",
+                            "lore": [
+                                {"text":"이걸 넣을 열기구는 어디에 있는거지?\n","color":"dark_purple","italic": false},
+                                { "text":"광물 카테고리 보상","color":"dark_gray","italic": false }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

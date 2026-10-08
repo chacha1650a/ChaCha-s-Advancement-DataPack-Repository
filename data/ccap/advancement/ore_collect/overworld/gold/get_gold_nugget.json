@@ -1,0 +1,31 @@
+{
+    "parent": "ccap:ore_category",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:gold_nugget"
+        },
+        "title": {
+            "text": "거대한 코딱지",
+            "color": "green"
+        },
+        "description": {
+            "text": "금 조각을 얻으세요",
+            "color": "white"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_gold_nugget": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:gold_nugget" }
+                ]
+            }
+        }
+    }
+}

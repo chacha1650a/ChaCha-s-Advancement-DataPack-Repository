@@ -1,0 +1,29 @@
+{
+    "parent": "ccap:ore_category",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:netherrack"
+        },
+        "title": {
+            "text": "네더",
+            "color": "red"
+        },
+        "description": {
+            "text": "네더월드에서 나오는 광물을 전부 모으세요!",
+            "color": "white"
+        },
+        "frame": "goal",
+        "announce_to_chat": false,
+        "show_toast": false,
+        "hidden": false
+    },
+    "criteria": {
+        "netherworld": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "minecraft:the_nether"
+            }
+        }
+    }
+}

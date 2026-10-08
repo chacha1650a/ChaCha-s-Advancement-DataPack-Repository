@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:ore_collect/iron/get_iron_nugget",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_ingot"
+        },
+        "title": {
+            "text": "따끈한 철괴로구나",
+            "color": "green"
+        },
+        "description": {
+            "text": "철 주괴를 얻으세요"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_iron_ingot": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:iron_ingot" }
+                ]
+            }
+        }
+    }
+}

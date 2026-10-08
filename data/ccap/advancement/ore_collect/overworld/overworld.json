@@ -1,0 +1,37 @@
+{
+    "parent": "ccap:ore_category",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:grass_block"
+        },
+        "title": {
+            "text": "오버월드",
+            "color": "dark_green"
+        },
+        "description": {
+            "text": "오버월드에서 나오는 광물을 전부 모으세요!",
+            "color": "white"
+        },
+        "frame": "goal",
+        "announce_to_chat": false,
+        "show_toast": false,
+        "hidden": false
+    },
+    "criteria": {
+        "overworld": {
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:type_specific/player": {
+                            "advancements": { "ccap:ore_category": true }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
