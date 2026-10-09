@@ -29,6 +29,7 @@
     },
     "rewards": {
         "experience": 200,
+        "function": "ccap:ore_collect/overworld/diamond/get_diamond_block_64",
         "loot": [ "ccap:reward/overworld/diamond/get_diamond_block_64" ]
     }
 }

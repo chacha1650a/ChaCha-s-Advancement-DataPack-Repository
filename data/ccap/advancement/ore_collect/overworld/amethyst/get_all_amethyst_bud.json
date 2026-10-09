@@ -6,7 +6,7 @@
             "id": "minecraft:budding_amethyst"
         },
         "title": {
-            "text": "자수정 콜렉터"
+            "text": "자수정 가족 집결!"
         },
         "description": {
             "text": "모든 자수정 봉우리와 군집을 얻으세요",
@@ -53,6 +53,7 @@
     },
     "rewards": {
         "experience": 150,
+        "function": "ccap:ore_collect/overworld/amethyst/get_all_amethyst_bud",
         "loot": [ "ccap:reward/overworld/amethyst/get_all_amethyst_bud" ] 
     }
 }

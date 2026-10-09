@@ -29,6 +29,7 @@
     },
     "rewards": {
         "experience": 100,
+        "function": "ccap:ore_collect/overworld/coal/get_coal_block_64",
         "loot": [ "ccap:reward/overworld/coal/get_coal_block_64" ]
     }
 }

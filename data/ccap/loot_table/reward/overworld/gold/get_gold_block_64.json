@@ -5,19 +5,19 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:raw_gold_block",
+                    "name": "minecraft:gold_nugget",
                     "modifier": [
                         {
                             "type": "minecraft:set_name",
                             "target": "item_name",
-                            "name": { "text":"금 덩어리","color":"gold" }
+                            "name": { "text":"금 이빨","color":"gold" }
                         },
                         {
                             "type": "minecraft:set_lore",
                             "mode": "append",
                             "lore": [
                                 {"text":""},
-                                { "text":"깨물어보면 꽤 아플거에요!","color":"dark_purple","italic": false },
+                                { "text":"충치라도 생겼나요?","color":"dark_purple","italic": false },
                                 { "text":"채광 카테고리 보상","color":"dark_gray","italic": false }
                             ]
                         },

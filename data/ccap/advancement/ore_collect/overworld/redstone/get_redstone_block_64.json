@@ -29,6 +29,7 @@
     },
     "rewards": {
         "experience": 100,
+        "function": "ccap:ore_collect/overworld/redstone/get_redstone_block_64",
         "loot": [ "ccap:reward/overworld/redstone/get_redstone_block_64" ]
     }
 }

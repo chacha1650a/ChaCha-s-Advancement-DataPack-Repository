@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:ore_collect/netherworld/netherite/get_netherite_scrap",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_ingot"
+        },
+        "title": {
+            "text": "업그레이드 준비"
+        },
+        "description": {
+            "text": "네더라이트 주괴를 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_netherite_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:netherite_ingot" }
+                ]
+            }
+        }
+    }
+}

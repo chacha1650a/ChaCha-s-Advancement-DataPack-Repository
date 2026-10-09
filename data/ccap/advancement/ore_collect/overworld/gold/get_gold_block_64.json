@@ -29,6 +29,7 @@
     },
     "rewards": {
         "experience": 100,
+        "function": "ccap:ore_collect/overworld/gold/get_gold_block_64",
         "loot": [ "ccap:reward/overworld/gold/get_gold_block_64" ]
     }
 }

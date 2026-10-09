@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:ore_collect/netherworld/netherworld",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:quartz"
+        },
+        "title": {
+            "text": "새하얀 광물"
+        },
+        "description": {
+            "text": "석영을 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_quartz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:quartz" }
+                ]
+            }
+        }
+    }
+}

@@ -29,6 +29,7 @@
     },
     "rewards": {
         "experience": 150,
+        "function": "ccap:ore_collect/overworld/emerald/get_emerald_block_64",
         "loot": [ "ccap:reward/overworld/emerald/get_emerald_block_64" ]
     }
 }
