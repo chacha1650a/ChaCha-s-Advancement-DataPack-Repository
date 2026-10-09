@@ -6,8 +6,7 @@
             "id": "minecraft:redstone_block"
         },
         "title": {
-            "text": "피스톤을 가져와!",
-            "color": "white"
+            "text": "피스톤을 가져와!"
         },
         "description": {
             "text": "레드스톤 블록을 얻으세요",

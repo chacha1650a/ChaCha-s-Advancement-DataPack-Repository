@@ -6,8 +6,7 @@
             "id": "minecraft:emerald_block"
         },
         "title": {
-            "text": "거래용 재고",
-            "color": "white"
+            "text": "거래용 재고"
         },
         "description": {
             "text":"에메랄드 블록을 얻으세요",

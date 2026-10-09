@@ -6,8 +6,7 @@
             "id": "minecraft:redstone_block"
         },
         "title": {
-            "text": "레드스톤 공장주",
-            "color": "white"
+            "text": "레드스톤 공장주"
         },
         "description": {
             "text": "레드스톤 블록 64개를 얻으세요",

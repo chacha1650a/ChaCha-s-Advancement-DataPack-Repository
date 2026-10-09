@@ -10,7 +10,7 @@
                         {
                             "type": "minecraft:set_name",
                             "target": "item_name",
-                            "name": { "text": "마법석","color": "white" }
+                            "name": { "text": "마법석","color": "blue" }
                         },
                         {
                             "type": "minecraft:set_lore",

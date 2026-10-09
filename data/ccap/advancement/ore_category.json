@@ -4,8 +4,7 @@
             "id": "minecraft:stone"
         },
         "title": {
-            "text":"채광 카테고리",
-            "color": "gray"
+            "text":"채광 카테고리"
         },
         "description": {
             "text":"Minecraft에 존재하는 모든 광물을 모아보세요!",

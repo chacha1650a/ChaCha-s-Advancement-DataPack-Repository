@@ -6,8 +6,7 @@
             "id": "minecraft:iron_block"
         },
         "title": {
-            "text": "I'm Ironman",
-            "color": "white"
+            "text": "I'm Ironman"
         },
         "description": {
             "text": "철 블록 64개를 얻으세요",

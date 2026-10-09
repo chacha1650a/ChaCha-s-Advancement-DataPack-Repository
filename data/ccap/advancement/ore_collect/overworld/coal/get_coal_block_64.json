@@ -6,8 +6,7 @@
             "id": "minecraft:coal_block"
         },
         "title": {
-            "text": "열기구 이륙 준비!",
-            "color": "white"
+            "text": "열기구 이륙 준비!"
         },
         "description": { 
             "text":"석탄 블록 64개를 얻으세요"
