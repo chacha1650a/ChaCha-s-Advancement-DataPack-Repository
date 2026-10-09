@@ -1,0 +1,35 @@
+{
+    "parent": "ccap:ore_collect/overworld/emerald/get_emerald_block",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:emerald_block"
+        },
+        "title": {
+            "text": "부르주아",
+            "color": "white"
+        },
+        "description": {
+            "text": "에메랄드 블록 64개를 얻으세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_emerald_block_64": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:emerald_block","count": 64 }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 150,
+        "loot": [ "ccap:reward/overworld/emerald/get_emerald_block_64" ]
+    }
+}

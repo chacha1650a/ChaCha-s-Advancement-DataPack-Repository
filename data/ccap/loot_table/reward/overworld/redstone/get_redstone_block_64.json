@@ -16,6 +16,7 @@
                             "type": "minecraft:set_lore",
                             "mode": "append",
                             "lore": [
+                                {"text":""},
                                 { "text":"AND 게이트에 대해서 알아요?","color":"dark_purple","italic": false },
                                 { "text":"채광 카테고리 보상","color":"dark_gray","italic": false }
                             ]

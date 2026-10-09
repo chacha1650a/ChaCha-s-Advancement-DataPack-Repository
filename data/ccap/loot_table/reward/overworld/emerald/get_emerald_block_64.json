@@ -5,19 +5,19 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:lapis_block",
+                    "name": "minecraft:emerald_block",
                     "modifier": [
                         {
                             "type": "minecraft:set_name",
                             "target": "item_name",
-                            "name": { "text": "마법석","color": "white" }
+                            "name": { "text":"DLAREME" }
                         },
                         {
                             "type": "minecraft:set_lore",
                             "mode": "append",
                             "lore": [
-                                {"text":""},
-                                { "text":"마탑이라도 세울 셈이신가요?","color":"dark_purple","italic": false },
+                                { "text":"" },
+                                { "text":"주민들에게 이목이 쏠릴 수도 있어요","color":"dark_purple","italic": false },
                                 { "text":"채광 카테고리 보상","color":"dark_gray","italic": false }
                             ]
                         },
@@ -28,7 +28,7 @@
                         {
                             "type": "minecraft:set_enchantments",
                             "enchantments": {
-                                "fortune": 3
+                                "minecraft:fortune": 3
                             }
                         },
                         {

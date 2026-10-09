@@ -1,0 +1,31 @@
+{
+    "parent": "ccap:ore_collect/overworld/diamond/get_diamond",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_block"
+        },
+        "title": {
+            "text": "I love Diamond",
+            "color": "white"
+        },
+        "description": {
+            "text": "다이아몬드 블록을 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_diamond_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:diamond_block" }
+                ]
+            }
+        }
+    }
+}

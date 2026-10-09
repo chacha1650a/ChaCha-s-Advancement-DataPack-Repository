@@ -1,0 +1,31 @@
+{
+    "parent": "ccap:ore_collect/overworld/overworld",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond"
+        },
+        "title": {
+            "text": "값 비싼 지하자원",
+            "color": "white"
+        },
+        "description": {
+            "text": "다이아몬드를 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:diamond" }
+                ]
+            }
+        }
+    }
+}

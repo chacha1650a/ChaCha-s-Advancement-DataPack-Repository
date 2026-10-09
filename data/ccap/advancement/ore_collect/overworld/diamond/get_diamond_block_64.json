@@ -1,0 +1,35 @@
+{
+    "parent": "ccap:ore_collect/overworld/diamond/get_diamond_block",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_block"
+        },
+        "title": {
+            "text": "다이아몬드 수집광",
+            "color": "white"
+        },
+        "description": {
+            "text": "다이아몬드 블록 64개를 얻으세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_diamond_block_64": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:diamond_block","count": 64 }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 200,
+        "loot": [ "ccap:reward/overworld/diamond/get_diamond_block_64" ]
+    }
+}
