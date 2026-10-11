@@ -1,0 +1,32 @@
+{
+    "parent": "ccap:logging/overworld/log/get_any_log",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_planks"
+        },
+        "title": {
+            "text": "목재 가공"
+        },
+        "description": {
+            "text": "아무 종류의 판자를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_any_plank": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": [ "minecraft:oak_planks", "minecraft:birch_planks", "minecraft:spruce_planks", "minecraft:acacia_planks",
+                                "minecraft:cherry_planks", "minecraft:jungle_planks", "minecraft:poplar_planks", "minecraft:dark_oak_planks",
+                                "minecraft:mangrove_planks", "minecraft:pale_oak_planks", "minecraft:crimson_planks", "minecraft:warped_planks"]  }
+                ]
+            }
+        }
+    }
+}
