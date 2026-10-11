@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:iron_axe"
+        },
+        "title": {
+            "text": "벌목"
+        },
+        "description": {
+            "text": "Minecraft에 존재하는 벌목과 관련된 발전과제들",
+            "color": "#966F33"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false,
+        "background": "minecraft:block/oak_log"
+    },
+    "criteria": {
+        "log_category": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:oak_log" }
+                ]
+            }
+        }
+    }
+}

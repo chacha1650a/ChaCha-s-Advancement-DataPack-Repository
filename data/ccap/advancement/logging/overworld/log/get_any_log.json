@@ -1,0 +1,32 @@
+{
+    "parent": "ccap:log_category",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_log"
+        },
+        "title": {
+            "text": "기초적인 자원"
+        },
+        "description": {
+            "text": "아무 종류의 원목 하나를 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_any_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": [ "minecraft:oak_log", "minecraft:birch_log", "minecraft:spruce_log", "minecraft:acacia_log",
+                                "minecraft:cherry_log", "minecraft:jungle_log", "minecraft:poplar_log", "minecraft:dark_oak_log",
+                                "minecraft:mangrove_log", "minecraft:pale_oak_log", "minecraft:crimson_stem", "minecraft:warped_stem"] }
+                ]
+            }
+        }
+    }
+}
