@@ -1,0 +1,32 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_any_boat",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_door"
+        },
+        "title": {
+            "text": "Knock Knock"
+        },
+        "description": {
+            "text": "아무 종류의 문을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": [ "minecraft:oak_door", "minecraft:birch_door", "minecraft:spruce_door", "minecraft:acacia_door",
+                                "minecraft:cherry_door", "minecraft:jungle_door", "minecraft:poplar_door", "minecraft:dark_oak_door",
+                                "minecraft:mangrove_door", "minecraft:pale_oak_door" ] }
+                ]
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "parent": "ccap:log_category",
+    "parent": "ccap:logging_category",
 
     "display": {
         "icon": {

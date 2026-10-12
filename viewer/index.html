@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frost Sword Viewer</title>
+<style>
+  :root { --bg: #1b1f27; --panel: #252b36; --text: #e6edf3; --muted: #8b96a5; --ok: #5fd38d; --err: #ff6b6b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, sans-serif; height: 100vh; display: flex; flex-direction: column; }
+  header { padding: 12px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  header h1 { font-size: 16px; margin: 0; }
+  button { background: var(--panel); color: var(--text); border: 1px solid #3a4352; border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+  #view { flex: 1; min-height: 0; }
+  #log { background: var(--panel); padding: 8px 16px; font: 12px/1.6 ui-monospace, monospace; max-height: 30vh; overflow: auto; }
+  .ok { color: var(--ok); } .err { color: var(--err); } .muted { color: var(--muted); }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<header>
+  <h1>frost_sword.json</h1>
+  <button id="reload">다시 불러오기</button>
+  <span class="muted">드래그: 회전 · 휠: 확대 · 우클릭 드래그: 이동</span>
+</header>
+<div id="view"></div>
+<div id="log"></div>
+
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+const MODEL_URL = "frost_sword.json";
+const logEl = document.getElementById("log");
+const log = (msg, cls = "") => { logEl.innerHTML += `<div class="${cls}">${msg}</div>`; logEl.scrollTop = 1e9; };
+
+// ---------- three.js 기본 장면 ----------
+const view = document.getElementById("view");
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(devicePixelRatio);
+view.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x1b1f27);
+const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 1000);
+camera.position.set(14, 10, 28);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0, 0);
+scene.add(new THREE.AmbientLight(0xffffff, 1.6));
+const sun = new THREE.DirectionalLight(0xffffff, 1.4); sun.position.set(5, 10, 7); scene.add(sun);
+scene.add(new THREE.GridHelper(32, 32, 0x3a4352, 0x2a313c));
+
+function resize() {
+  const w = view.clientWidth, h = view.clientHeight;
+  renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix();
+}
+addEventListener("resize", resize); resize();
+renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+
+// ---------- 통신: JSON과 텍스처 받아오기 ----------
+async function fetchJson(url) {
+  const t = performance.now();
+  const res = await fetch(url, { cache: "no-store" });
+  log(`GET ${url} → ${res.status} ${res.statusText} (${Math.round(performance.now() - t)}ms)`, res.ok ? "ok" : "err");
+  if (!res.ok) throw new Error(`${url} 응답 실패`);
+  return res.json();
+}
+
+async function loadTexture(url) {
+  const t = performance.now();
+  const res = await fetch(url, { cache: "no-store" });
+  log(`GET ${url} → ${res.status} ${res.statusText} (${Math.round(performance.now() - t)}ms)`, res.ok ? "ok" : "err");
+  if (!res.ok) throw new Error(`${url} 응답 실패`);
+  const bitmap = await createImageBitmap(await res.blob(), { imageOrientation: "flipY" });
+  const tex = new THREE.Texture(bitmap);
+  tex.magFilter = tex.minFilter = THREE.NearestFilter;   // 픽셀아트가 뭉개지지 않게
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.flipY = false;
+  tex.needsUpdate = true;
+  return tex;
+}
+
+// 모델의 "Downloads/frost_sword" 같은 경로 → 같은 폴더의 frost_sword.png
+const textureUrl = (path) => path.split("/").pop() + ".png";
+
+// ---------- 마인크래프트 element → three.js 메시 ----------
+// BoxGeometry 면 순서: east(+x), west(-x), up(+y), down(-y), south(+z), north(-z)
+const FACE_ORDER = ["east", "west", "up", "down", "south", "north"];
+
+function buildElement(el, materials, texSize) {
+  const [fx, fy, fz] = el.from, [tx, ty, tz] = el.to;
+  const geo = new THREE.BoxGeometry(tx - fx || 0.001, ty - fy || 0.001, tz - fz || 0.001);
+  const uv = geo.attributes.uv;
+  const mats = [];
+  FACE_ORDER.forEach((name, i) => {
+    const face = el.faces?.[name];
+    if (!face) { mats.push(materials.hidden); return; }
+    const [u1, v1, u2, v2] = face.uv ?? [0, 0, texSize[0], texSize[1]];
+    // 각 면의 꼭짓점 순서: 왼쪽위, 오른쪽위, 왼쪽아래, 오른쪽아래
+    const pts = [[u1, v1], [u2, v1], [u1, v2], [u2, v2]];
+    pts.forEach(([u, v], k) => uv.setXY(i * 4 + k, u / 16, 1 - v / 16));
+    mats.push(materials[face.texture?.replace("#", "")] ?? materials.hidden);
+  });
+  const mesh = new THREE.Mesh(geo, mats);
+  mesh.name = el.name ?? "";
+  // 모델 좌표(0~16)를 화면 중앙(8,8,8 기준)으로 옮김
+  mesh.position.set((fx + tx) / 2 - 8, (fy + ty) / 2 - 8, (fz + tz) / 2 - 8);
+
+  if (el.rotation && el.rotation.angle) {
+    const { angle, axis, origin } = el.rotation;
+    const pivot = new THREE.Group();
+    pivot.position.set(origin[0] - 8, origin[1] - 8, origin[2] - 8);
+    mesh.position.sub(pivot.position);
+    pivot.rotation[axis] = THREE.MathUtils.degToRad(angle);
+    pivot.add(mesh);
+    return pivot;
+  }
+  return mesh;
+}
+
+let current = null;
+async function load() {
+  logEl.innerHTML = "";
+  try {
+    const model = await fetchJson(MODEL_URL);
+    log(`elements ${model.elements?.length ?? 0}개, textures: ${JSON.stringify(model.textures)}`, "muted");
+
+    const materials = { hidden: new THREE.MeshBasicMaterial({ visible: false }) };
+    for (const [key, path] of Object.entries(model.textures ?? {})) {
+      if (key === "particle" || path.startsWith("#")) continue;
+      const map = await loadTexture(textureUrl(path));
+      materials[key] = new THREE.MeshLambertMaterial({ map, alphaTest: 0.1, transparent: false });
+    }
+
+    if (current) scene.remove(current);
+    current = new THREE.Group();
+    for (const el of model.elements ?? []) current.add(buildElement(el, materials, model.texture_size ?? [16, 16]));
+    scene.add(current);
+    log("화면에 그리기 완료", "ok");
+  } catch (e) {
+    log(`오류: ${e.message}`, "err");
+  }
+}
+document.getElementById("reload").onclick = load;
+load();
+</script>
+</body>
+</html>

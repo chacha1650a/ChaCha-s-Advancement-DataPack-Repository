@@ -1,0 +1,1 @@
+advancement grant @s only ccap:pastoralism_category
