@@ -19,13 +19,12 @@
     },
     "criteria": {
         "get_any_plank": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "items": [
-                    { "items": [ "minecraft:oak_planks", "minecraft:birch_planks", "minecraft:spruce_planks", "minecraft:acacia_planks",
-                                "minecraft:cherry_planks", "minecraft:jungle_planks", "minecraft:poplar_planks", "minecraft:dark_oak_planks",
-                                "minecraft:mangrove_planks", "minecraft:pale_oak_planks", "minecraft:crimson_planks", "minecraft:warped_planks"]  }
-                ]
+                "recipes": [ "minecraft:oak_planks", "minecraft:birch_planks", "minecraft:spruce_planks", "minecraft:acacia_planks",
+                              "minecraft:cherry_planks", "minecraft:jungle_planks", "minecraft:poplar_planks", "minecraft:dark_oak_planks",
+                              "minecraft:mangrove_planks", "minecraft:pale_oak_planks", "minecraft:bamboo_planks", "minecraft:crimson_planks",
+                              "minecraft:warped_planks" ]
             }
         }
     }

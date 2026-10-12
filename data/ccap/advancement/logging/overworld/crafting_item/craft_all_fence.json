@@ -1,0 +1,35 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_any_fence",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_fence"
+        },
+        "title": {
+            "text": "all타리"
+        },
+        "description": {
+            "text": "모든 종류의 울타리를 제작하세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "oak_fence":      { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:oak_fence" } },
+        "birch_fence":    { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:birch_fence" } },
+        "spruce_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:spruce_fence" } },
+        "acacia_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:acacia_fence" } },
+        "cherry_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:cherry_fence" } },
+        "jungle_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:jungle_fence" } },
+        "poplar_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:poplar_fence" } },
+        "dark_oak_fence": { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:dark_oak_fence" } },
+        "mangrove_fence": { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:mangrove_fence" } },
+        "pale_oak_fence": { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:pale_oak_fence" } },
+        "bamboo_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:bamboo_fence" } },
+        "crimson_fence":  { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:crimson_fence" } },
+        "warped_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:warped_fence" } }
+    }
+}

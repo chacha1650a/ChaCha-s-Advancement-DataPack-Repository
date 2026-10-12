@@ -1,0 +1,46 @@
+{
+    "parent": "ccap:logging/overworld/log/get_any_log",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:stripped_oak_log"
+        },
+        "title": {
+            "text": "나무 공예"
+        },
+        "description": {
+            "text": "아무 원목의 껍질을 벗기세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "strip_any_log": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": {
+                    "type": "all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:match_block",
+                            "blocks": [
+                                "minecraft:oak_log", "minecraft:birch_log", "minecraft:spruce_log", "minecraft:acacia_log",
+                                "minecraft:cherry_log", "minecraft:jungle_log", "minecraft:poplar_log", "minecraft:dark_oak_log",
+                                "minecraft:mangrove_log", "minecraft:pale_oak_log", "minecraft:bamboo_block", "minecraft:crimson_stem", "minecraft:warped_stem"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:match_tool",
+                            "predicate": {
+                                "items": "#minecraft:axes"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

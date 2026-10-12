@@ -19,11 +19,9 @@
     },
     "criteria": {
         "craft_stick": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "items": [
-                    { "items": "minecraft:stick" }
-                ]
+                "recipes": [ "minecraft:stick", "minecraft:stick_from_bamboo_item" ]
             }
         }
     }
