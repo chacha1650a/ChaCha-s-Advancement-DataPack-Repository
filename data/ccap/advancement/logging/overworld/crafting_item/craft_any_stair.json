@@ -1,0 +1,32 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_stick",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_stairs"
+        },
+        "title": {
+            "text": "천국의 계단"
+        },
+        "description": {
+            "text": "아무 종류의 계단을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_stair": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:oak_stairs", "minecraft:birch_stairs", "minecraft:spruce_stairs", "minecraft:acacia_stairs",
+                    "minecraft:cherry_stairs", "minecraft:jungle_stairs", "minecraft:poplar_stairs", "minecraft:dark_oak_stairs",
+                    "minecraft:mangrove_stairs", "minecraft:pale_oak_stairs", "minecraft:bamboo_stairs", "minecraft:crimson_stairs", "minecraft:warped_stairs"
+                ]
+            }
+        }
+    }
+}

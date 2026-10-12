@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "modifier": [
+                        {
+                            "type": "set_name",
+                            "target": "item_name",
+                            "name": { "text": "나무 큐브","color":"#966F33","italic":false }
+                        },
+                        {
+                            "type": "set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text": "목재로 만든 큐브!","color":"dark_purple","italic":false }
+                            ]
+                        },
+                        {
+                            "type": "set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "minecraft:profile": "Wood"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

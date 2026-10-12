@@ -31,5 +31,8 @@
         "bamboo_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:bamboo_fence" } },
         "crimson_fence":  { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:crimson_fence" } },
         "warped_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:warped_fence" } }
+    },
+    "rewards": {
+        "function": "ccap:logging/fence/craft_all_fence"
     }
-}
+}
