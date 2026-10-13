@@ -1,0 +1,32 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_stick",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:charcoal"
+        },
+        "title": {
+            "text": "아낌없이 주는 나무"
+        },
+        "description": {
+            "text": "목탄을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_charcoal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:charcoal"
+                    }
+                ]
+            }
+        }
+    }
+}

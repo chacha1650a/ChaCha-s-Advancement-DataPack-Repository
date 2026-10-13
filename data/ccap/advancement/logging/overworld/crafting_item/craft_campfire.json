@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_stick",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:campfire"
+        },
+        "title": {
+            "text": "99 nights in the forest"
+        },
+        "description": {
+            "text": "모닥불을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_campfire": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:campfire"
+                ]
+            }
+        }
+    }
+}

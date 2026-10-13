@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_campfire",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:soul_campfire"
+        },
+        "title": {
+            "text": "1,400℃ +"
+        },
+        "description": {
+            "text": "영혼 모닥불을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_soul_campfire": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:soul_campfire"
+                ]
+            }
+        }
+    }
+}
