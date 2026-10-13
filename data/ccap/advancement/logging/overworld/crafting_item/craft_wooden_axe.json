@@ -1,0 +1,28 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_wooden_sword",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:wooden_axe"
+        },
+        "title": {
+            "text": "벌목 개시!"
+        },
+        "description": {
+            "text": "나무 도끼를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_wooden_axe": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": "minecraft:wooden_axe"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_wooden_axe",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:wooden_pickaxe"
+        },
+        "title": {
+            "text": "아오지 탄광"
+        },
+        "description": {
+            "text": "나무 곡괭이를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_wooden_pickaxe": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": "minecraft:wooden_pickaxe"
+            }
+        }
+    }
+}
