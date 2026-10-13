@@ -53,7 +53,7 @@
     },
     "rewards": {
         "experience": 150,
-        "function": "ccap:mining/overworld/amethyst/get_all_amethyst_bud",
-        "loot": [ "ccap:reward/mining/overworld/amethyst/get_all_amethyst_bud" ] 
+        "function": "ccap:mining/overworld/amethyst/get_all_amethyst_buds",
+        "loot": [ "ccap:reward/mining/overworld/amethyst/get_all_amethyst_buds" ] 
     }
 }

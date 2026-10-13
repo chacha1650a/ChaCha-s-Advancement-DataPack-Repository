@@ -1,5 +1,5 @@
 {
-    "parent": "ccap:logging/overworld/crafting_item/get_any_plank",
+    "parent": "ccap:logging/overworld/crafting_item/craft_any_plank",
 
     "display": {
         "icon": {

@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_fence",
+                    "modifier": [
+                        {
+                            "type": "set_name",
+                            "target": "item_name",
+                            "name": { "text": "뾰족한 울타리","color":"#966F33","italic":false }
+                        },
+                        {
+                            "type": "set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text":"" },
+                                { "text": "찔리면 아플거에요!","color":"dark_purple","italic": false },
+                                { "text": "벌목 카테고리 보상","color":"#966F33","italic": false }
+                            ]
+                        },
+                        {
+                            "type": "set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": 5
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:enchantments"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

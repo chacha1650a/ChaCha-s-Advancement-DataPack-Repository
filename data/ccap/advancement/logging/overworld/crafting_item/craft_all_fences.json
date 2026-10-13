@@ -33,6 +33,8 @@
         "warped_fence":   { "trigger": "minecraft:recipe_crafted", "conditions": { "recipes": "minecraft:warped_fence" } }
     },
     "rewards": {
-        "function": "ccap:logging/fence/craft_all_fence"
+        "experience": 100,
+        "function": "ccap:logging/fence/craft_all_fences",
+        "loot": [ "ccap:reward/logging/craft_all_fences" ]
     }
 }

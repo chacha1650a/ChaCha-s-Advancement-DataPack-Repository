@@ -1,0 +1,40 @@
+{
+    "parent": "ccap:logging/overworld/log/get_any_log",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_log"
+        },
+        "title": {
+            "text": "선녀와 나무꾼"
+        },
+        "description": {
+            "text": "모든 종류의 원목을 얻으세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_oak_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:oak_log" } ] } },
+        "get_birch_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:birch_log" } ] } },
+        "get_spruce_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:spruce_log" } ] } },
+        "get_acacia_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:acacia_log" } ] } },
+        "get_cherry_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:cherry_log" } ] } },
+        "get_jungle_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:jungle_log" } ] } },
+        "get_poplar_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:poplar_log" } ] } },
+        "get_dark_oak_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:dark_oak_log" } ] } },
+        "get_mangrove_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:mangrove_log" } ] } },
+        "get_pale_oak_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:pale_oak_log" } ] } },
+        "get_bamboo_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:bamboo_block" } ] } },
+        "get_crimson_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:crimson_stem" } ] } },
+        "get_warped_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:warped_stem" } ] } }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "ccap:logging/log/get_all_logs",
+        "loot": [ "ccap:reward/logging/get_all_logs" ]
+    }
+}

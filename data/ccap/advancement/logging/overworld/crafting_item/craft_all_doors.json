@@ -1,0 +1,40 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/craft_any_door",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_door"
+        },
+        "title": {
+            "text": "사랑은 열린 문"
+        },
+        "description": {
+            "text": "모든 종류의 문을 제작하세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_oak_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:oak_door" } },
+        "craft_birch_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:birch_door" } },
+        "craft_spruce_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:spruce_door" } },
+        "craft_acacia_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:acacia_door" } },
+        "craft_cherry_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:cherry_door" } },
+        "craft_jungle_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:jungle_door" } },
+        "craft_poplar_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:poplar_door" } },
+        "craft_dark_oak_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:dark_oak_door" } },
+        "craft_mangrovedoorn": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:mangrove_door" } },
+        "craft_pale_oak_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:pale_oak_door" } },
+        "craft_bamboo_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:bamboo_door" } },
+        "craft_crimson_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:crimson_door" } },
+        "craft_warped_door": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:warped_door" } }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "ccap:logging/door/craft_all_doors",
+        "loot": [ "ccap:reward/logging/craft_all_doors" ]
+    }
+}

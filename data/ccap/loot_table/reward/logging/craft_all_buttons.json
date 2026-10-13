@@ -1,0 +1,46 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_name",
+                            "target": "item_name",
+                            "name": { "text": "10억 버튼","color":"red","italic": false }
+                        },
+                        {
+                            "type": "minecraft:set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text": "" },
+                                { "text": "10년을 살다 오면 10억을 준다고?","color":"dark_purple","italic": false },
+                                { "text": "벌목 카테고리 보상","color":"#966F33","italic": false }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:profile": {
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzczZmIyYTI4ZjNiNjY1NDg2NDEyZGI3YjY2Y2RiN2ZjNWM3ZDMzZDc0ZTg1MGI5NDcyMmRkM2QxNGFhYSJ9fX0="
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
