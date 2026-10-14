@@ -1,0 +1,33 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/wooden_item/craft_wooden_hoe",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_wood"
+        },
+        "title": {
+            "text": "나무 도구 집결!"
+        },
+        "description": {
+            "text": "모든 나무 도구를 제작하세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_wooden_sword": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:wooden_sword" } },
+        "craft_wooden_axe": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:wooden_axe" } },
+        "craft_wooden_pickaxe": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:wooden_pickaxe" } },
+        "craft_wooden_shovel": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:wooden_shovel" } },
+        "craft_wooden_hoe": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:wooden_hoe" } },
+        "craft_wooden_spear": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:wooden_spear" } }
+    },
+    "rewards": {
+        "experience": 50,
+        "function": "ccap:logging/wooden_item/craft_all_wooden_items",
+        "loot": [ "ccap:reward/logging/craft_all_wooden_items" ]
+    }
+}

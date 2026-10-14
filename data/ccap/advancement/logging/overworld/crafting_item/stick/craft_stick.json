@@ -1,0 +1,28 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/plank/craft_any_plank",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:stick"
+        },
+        "title": {
+            "text": "식사엔 젓가락이 필수지"
+        },
+        "description": {
+            "text": "나무 막대기를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_stick": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [ "minecraft:stick", "minecraft:stick_from_bamboo_item" ]
+            }
+        }
+    }
+}

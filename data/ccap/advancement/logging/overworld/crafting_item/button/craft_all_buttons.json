@@ -1,0 +1,40 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/button/craft_any_button",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_button"
+        },
+        "title": {
+            "text": "버튼 수집가"
+        },
+        "description": {
+            "text": "모든 종류의 버튼을 제작하세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_oak_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:oak_button" } },
+        "craft_birch_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:birch_button" } },
+        "craft_spruce_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:spruce_button" } },
+        "craft_acacia_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:acacia_button" } },
+        "craft_cherry_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:cherry_button" } },
+        "craft_jungle_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:jungle_button" } },
+        "craft_poplar_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:poplar_button" } },
+        "craft_dark_oak_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:dark_oak_button" } },
+        "craft_mangrove_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:mangrove_button" } },
+        "craft_pale_oak_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:pale_oak_button" } },
+        "craft_bamboo_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:bamboo_button" } },
+        "craft_crimson_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:crimson_button" } },
+        "craft_warped_button": { "trigger": "minecraft:recipe_crafted","conditions": { "recipes": "minecraft:warped_button" } }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "ccap:logging/button/craft_all_buttons",
+        "loot": [ "ccap:reward/logging/craft_all_buttons" ]
+    }
+}

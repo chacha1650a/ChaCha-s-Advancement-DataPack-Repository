@@ -1,0 +1,33 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/button/craft_any_button",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_pressure_plate"
+        },
+        "title": {
+            "text": "플레이트 업"
+        },
+        "description": {
+            "text": "아무 종류의 발판을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_pressure_plate": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:oak_pressure_plate", "minecraft:birch_pressure_plate", "minecraft:spruce_pressure_plate", "minecraft:acacia_pressure_plate",
+                    "minecraft:cherry_pressure_plate", "minecraft:jungle_pressure_plate", "minecraft:poplar_pressure_plate", "minecraft:dark_oak_pressure_plate",
+                    "minecraft:mangrove_pressure_plate", "minecraft:pale_oak_pressure_plate", "minecraft:bamboo_pressure_plate", "minecraft:crimson_pressure_plate",
+                    "minecraft:warped_pressure_plate"
+                ]
+            }
+        }
+    }
+}

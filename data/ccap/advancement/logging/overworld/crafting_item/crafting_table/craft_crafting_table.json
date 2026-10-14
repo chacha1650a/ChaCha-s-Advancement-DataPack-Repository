@@ -1,0 +1,28 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/plank/craft_any_plank",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:crafting_table"
+        },
+        "title": {
+            "text": "만능 테이블!"
+        },
+        "description": {
+            "text": "제작대를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_crafting_table": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": "minecraft:crafting_table"
+            }
+        }
+    }
+}

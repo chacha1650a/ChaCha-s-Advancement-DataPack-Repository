@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/crafting_table/craft_crafting_table",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_boat"
+        },
+        "title": {
+            "text": "고잉 메리호"
+        },
+        "description": {
+            "text": "아무 종류의 보트를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_boat": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [ "minecraft:oak_boat", "minecraft:birch_boat", "minecraft:spruce_boat", "minecraft:acacia_boat",
+                              "minecraft:cherry_boat", "minecraft:jungle_boat", "minecraft:poplar_boat", "minecraft:dark_oak_boat",
+                              "minecraft:mangrove_boat", "minecraft:pale_oak_boat", "minecraft:bamboo_raft" ]
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@
         "get_dark_oak_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:dark_oak_log" } ] } },
         "get_mangrove_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:mangrove_log" } ] } },
         "get_pale_oak_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:pale_oak_log" } ] } },
-        "get_bamboo_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:bamboo_block" } ] } },
+        "get_bamboo_block": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:bamboo_block" } ] } },
         "get_crimson_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:crimson_stem" } ] } },
         "get_warped_log": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:warped_stem" } ] } }
     },

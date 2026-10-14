@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/nether_world/vine/get_twisting_vine",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:warped_roots"
+        },
+        "title": {
+            "text": "버섯이랑 닮았군"
+        },
+        "description": {
+            "text": "뒤틀린 뿌리를 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_warped_roots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:warped_roots" }
+                ]
+            }
+        }
+    }
+}

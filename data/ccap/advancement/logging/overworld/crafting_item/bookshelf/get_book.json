@@ -1,0 +1,29 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/plank/craft_any_plank",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:book"
+        },
+        "title": {
+            "text": "지식의 힘"
+        },
+        "description": {
+            "text": "책을 제작하거나 얻으세요"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_book": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:book" }
+                ]
+            }
+        }
+    }
+}

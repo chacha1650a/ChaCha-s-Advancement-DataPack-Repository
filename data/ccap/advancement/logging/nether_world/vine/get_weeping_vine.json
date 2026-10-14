@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/nether_world/hyphae/get_crimson_fungus",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:weeping_vines"
+        },
+        "title": {
+            "text": "흐물흐물"
+        },
+        "description": {
+            "text": "늘어진 덩굴을 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_weeping_vine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:weeping_vines" }
+                ]
+            }
+        }
+    }
+}

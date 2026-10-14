@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/chest/craft_chest",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:barrel"
+        },
+        "title": {
+            "text": "생선 통조림"
+        },
+        "description": {
+            "text": "통을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_barrel": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:barrel"
+                ]
+            }
+        }
+    }
+}

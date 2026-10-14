@@ -1,0 +1,37 @@
+{
+    "parent": "ccap:logging_category",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:crimson_nylium"
+        },
+        "title": {
+            "text": "네더 벌목 일지"
+        },
+        "description": {
+            "text": "아무 종류의 도끼를 들고 네더로 가세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": true
+    },
+    "criteria": {
+        "nether_logging_log": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "minecraft:the_nether",
+                "player": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:equipment": {
+                            "mainhand": { "items": "#minecraft:axes" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

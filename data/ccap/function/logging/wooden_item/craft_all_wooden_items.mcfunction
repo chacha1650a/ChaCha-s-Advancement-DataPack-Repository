@@ -1,0 +1,2 @@
+tag @s add ccap_msg_all_wooden_items
+schedule function ccap:logging/wooden_item/craft_all_wooden_items_msg 1t

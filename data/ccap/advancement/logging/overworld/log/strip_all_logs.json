@@ -1,0 +1,40 @@
+{
+    "parent": "ccap:logging/overworld/log/strip_any_log",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:stripped_oak_log"
+        },
+        "title": {
+            "text": "목공소"
+        },
+        "description": {
+            "text": "모든 원목의 껍질을 벗기세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "strip_oak_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:oak_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_birch_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:birch_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_spruce_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:spruce_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_acacia_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:acacia_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_cherry_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:cherry_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_jungle_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:jungle_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_poplar_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:poplar_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_dark_oak_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:dark_oak_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_mangrove_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:mangrove_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_pale_oak_log": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:pale_oak_log" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_bamboo_block": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:bamboo_block" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_crimson_stem": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:crimson_stem" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } },
+        "strip_warped_stem": { "trigger": "minecraft:item_used_on_block","conditions": {"location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks": "minecraft:warped_stem" }, { "type": "minecraft:match_tool","predicate": { "items": "#minecraft:axes" } } ] } } }
+    },
+    "rewards": {
+        "experience": 250,
+        "function": "ccap:logging/stripped_log/strip_all_logs",
+        "loot": [ "ccap:reward/logging/strip_all_logs" ]
+    }
+}

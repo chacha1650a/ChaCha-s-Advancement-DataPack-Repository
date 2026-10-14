@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/nether_world/hyphae/get_warped_fungus",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:twisting_vines"
+        },
+        "title": {
+            "text": "엘레베이터"
+        },
+        "description": {
+            "text": "휘어진 덩굴을 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_twisting_vine": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:twisting_vines" }
+                ]
+            }
+        }
+    }
+}

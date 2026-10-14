@@ -1,0 +1,33 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/stick/craft_stick",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_sign"
+        },
+        "title": {
+            "text": "마을 ->"
+        },
+        "description": {
+            "text": "아무 종류의 표지판을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_sign": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:oak_sign", "minecraft:birch_sign", "minecraft:spruce_sign", "minecraft:acacia_sign",
+                    "minecraft:cherry_sign", "minecraft:jungle_sign", "minecraft:poplar_sign", "minecraft:dark_oak_sign",
+                    "minecraft:mangrove_sign", "minecraft:pale_oak_sign", "minecraft:bamboo_sign", "minecraft:crimson_sign",
+                    "minecraft:warped_sign"
+                ]
+            }
+        }
+    }
+}

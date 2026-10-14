@@ -1,0 +1,28 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/wooden_item/craft_wooden_pickaxe",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:wooden_hoe"
+        },
+        "title": {
+            "text": "스타듀밸리"
+        },
+        "description": {
+            "text": "나무 괭이를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_wooden_hoe": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": "minecraft:wooden_hoe"
+            }
+        }
+    }
+}

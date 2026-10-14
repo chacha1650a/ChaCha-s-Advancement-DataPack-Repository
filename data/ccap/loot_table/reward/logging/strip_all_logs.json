@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_wood",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_name",
+                            "target": "item_name",
+                            "name": { "text": "통나무","color":"#6E473B","italic": false }
+                        },
+                        {
+                            "type": "minecraft:set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text": "" },
+                                { "text": "6면이 다 나무잖아?","color":"dark_purple","italic": false },
+                                { "text": "벌목 카테고리 보상","color":"#966F33","italic": false }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": 3
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:enchantments"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

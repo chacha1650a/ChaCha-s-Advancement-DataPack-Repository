@@ -1,0 +1,39 @@
+{
+    "parent": "ccap:logging/overworld/log/get_any_wood",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_wood"
+        },
+        "title": {
+            "text": "나무 축제"
+        },
+        "description": {
+            "text": "모든 종류의 나무를 얻으세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_oak_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:oak_wood" } ] } },
+        "get_birch_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:birch_wood" } ] } },
+        "get_spruce_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:spruce_wood" } ] } },
+        "get_acacia_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:acacia_wood" } ] } },
+        "get_cherry_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:cherry_wood" } ] } },
+        "get_jungle_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:jungle_wood" } ] } },
+        "get_poplar_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:poplar_wood" } ] } },
+        "get_dark_oak_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:dark_oak_wood" } ] } },
+        "get_mangrove_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:mangrove_wood" } ] } },
+        "get_pale_oak_wood": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:pale_oak_wood" } ] } },
+        "get_crimson_hyphae": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:crimson_hyphae" } ] } },
+        "get_warped_hyphae": { "trigger": "minecraft:inventory_changed","conditions": { "items": [ { "items": "minecraft:warped_hyphae" } ] } }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "ccap:logging/wood/get_all_woods",
+        "loot": [ "ccap:reward/logging/get_all_woods" ]
+    }
+}

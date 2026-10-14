@@ -1,0 +1,28 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/bookshelf/get_book",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:bookshelf"
+        },
+        "title": {
+            "text": "책벌레"
+        },
+        "description": {
+            "text": "책장을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_bookshelf": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": "minecraft:bookshelf"
+            }
+        }
+    }
+}

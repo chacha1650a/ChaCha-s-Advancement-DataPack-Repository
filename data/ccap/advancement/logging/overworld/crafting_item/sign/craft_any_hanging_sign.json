@@ -1,0 +1,33 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/sign/craft_any_sign",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_hanging_sign"
+        },
+        "title": {
+            "text": "데롱 데롱"
+        },
+        "description": {
+            "text": "아무 종류의 메다는 표지판을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_hanging_sign": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:oak_hanging_sign", "minecraft:birch_hanging_sign", "minecraft:spruce_hanging_sign", "minecraft:acacia_hanging_sign",
+                    "minecraft:cherry_hanging_sign", "minecraft:jungle_hanging_sign", "minecraft:poplar_hanging_sign", "minecraft:dark_oak_hanging_sign",
+                    "minecraft:mangrove_hanging_sign", "minecraft:pale_oak_hanging_sign", "minecraft:bamboo_hanging_sign", "minecraft:crimson_hanging_sign",
+                    "minecraft:warped_hanging_sign"
+                ]
+            }
+        }
+    }
+}

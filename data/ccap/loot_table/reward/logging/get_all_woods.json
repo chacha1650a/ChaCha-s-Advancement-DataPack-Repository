@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bamboo",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_name",
+                            "target": "item_name",
+                            "name": { "text":"죽창","color":"#7BA05B","italic": false }
+                        },
+                        {
+                            "type": "minecraft:set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text": "" },
+                                { "text": "조심하세요! 굉장히 날카로워요","color":"dark_purple","italic": false },
+                                { "text": "벌목 카테고리 보상","color": "#966F33","italic": false }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": 2
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:enchantments"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

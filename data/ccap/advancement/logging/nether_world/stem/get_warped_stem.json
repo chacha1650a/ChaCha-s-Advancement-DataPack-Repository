@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/nether_world/nether_logging_log",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:warped_stem"
+        },
+        "title": {
+            "text": "곰팡이 핀건가?"
+        },
+        "description": {
+            "text": "뒤틀린 자루를 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_warped_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:warped_stem" }
+                ]
+            }
+        }
+    }
+}

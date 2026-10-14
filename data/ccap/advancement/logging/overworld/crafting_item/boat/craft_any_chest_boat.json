@@ -1,0 +1,32 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/boat/craft_any_boat",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_chest_boat"
+        },
+        "title": {
+            "text": "이삿짐 나르기"
+        },
+        "description": {
+            "text": "아무 종류의 상자 보트를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_chest_boat": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:oak_chest_boat", "minecraft:birch_chest_boat", "minecraft:spruce_chest_boat", "minecraft:acacia_chest_boat",
+                    "minecraft:cherry_chest_boat", "minecraft:jungle_chest_boat", "minecraft:poplar_chest_boat", "minecraft:dark_oak_chest_boat",
+                    "minecraft:mangrove_chest_boat", "minecraft:pale_oak_chest_boat", "minecraft:bamboo_chest_raft"
+                ]
+            }
+        }
+    }
+}

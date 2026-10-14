@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/nether_world/stem/get_warped_stem",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:warped_hyphae"
+        },
+        "title": {
+            "text": "식욕 감퇴"
+        },
+        "description": {
+            "text": "뒤틀린 네사체를 얻으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_warped_hyphae": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:warped_hyphae" }
+                ]
+            }
+        }
+    }
+}

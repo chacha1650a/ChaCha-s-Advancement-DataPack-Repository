@@ -1,0 +1,47 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/bookshelf/craft_chiseled_bookshelf",
+    
+    "display": {
+        "icon": {
+            "id": "minecraft:enchanted_book"
+        },
+        "title": {
+            "text": "도서관 사서"
+        },
+        "description": {
+            "text": "조각된 책장에 책을 꽂으세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "use_book_on_bookshelf": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": {
+                    "type": "all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:match_block",
+                            "blocks": "minecraft:chiseled_bookshelf"
+                        },
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "minecraft:equipment": {
+                                    "mainhand": {
+                                        "items": "#minecraft:bookshelf_books"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

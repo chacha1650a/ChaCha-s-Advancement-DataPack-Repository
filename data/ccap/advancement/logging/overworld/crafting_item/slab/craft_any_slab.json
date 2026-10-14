@@ -1,0 +1,33 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/stick/craft_stick",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_slab"
+        },
+        "title": {
+            "text": "블/록"
+        },
+        "description": {
+            "text": "아무 종류의 반 블록을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_slab": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:oak_slab", "minecraft:birch_slab", "minecraft:spruce_slab", "minecraft:acacia_slab",
+                    "minecraft:cherry_slab", "minecraft:jungle_slab", "minecraft:poplar_slab", "minecraft:dark_oak_slab",
+                    "minecraft:mangrove_slab", "minecraft:pale_oak_slab", "minecraft:bamboo_slab", "minecraft:crimson_slab",
+                    "minecraft:warped_slab"
+                ]
+            }
+        }
+    }
+}
