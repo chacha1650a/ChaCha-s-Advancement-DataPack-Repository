@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/crafting_table/craft_crafting_table",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:cartography_table"
+        },
+        "title": {
+            "text": "탐험 본능"
+        },
+        "description": {
+            "text": "지도 제작대를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_cartography_table": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:cartography_table"
+                ]
+            }
+        }
+    }
+}

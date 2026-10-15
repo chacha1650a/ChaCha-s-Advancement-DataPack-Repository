@@ -1,0 +1,40 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/sign/craft_any_sign",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:glow_ink_sac"
+        },
+        "title": {
+            "text": "색깔 놀이"
+        },
+        "description": {
+            "text": "모든 표지판에 색을 칠하세요",
+            "color": "dark_purple"
+        },
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "paint_oak_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:oak_sign", "minecraft:oak_wall_sign", "minecraft:oak_hanging_sign", "minecraft:oak_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_spruce_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:spruce_sign", "minecraft:spruce_wall_sign", "minecraft:spruce_hanging_sign", "minecraft:spruce_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_birch_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:birch_sign", "minecraft:birch_wall_sign", "minecraft:birch_hanging_sign", "minecraft:birch_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_jungle_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:jungle_sign", "minecraft:jungle_wall_sign", "minecraft:jungle_hanging_sign", "minecraft:jungle_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_acacia_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:acacia_sign", "minecraft:acacia_wall_sign", "minecraft:acacia_hanging_sign", "minecraft:acacia_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_dark_oak_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:dark_oak_sign", "minecraft:dark_oak_wall_sign", "minecraft:dark_oak_hanging_sign", "minecraft:dark_oak_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_mangrove_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:mangrove_sign", "minecraft:mangrove_wall_sign", "minecraft:mangrove_hanging_sign", "minecraft:mangrove_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_cherry_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:cherry_sign", "minecraft:cherry_wall_sign", "minecraft:cherry_hanging_sign", "minecraft:cherry_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_pale_oak_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:pale_oak_sign", "minecraft:pale_oak_wall_sign", "minecraft:pale_oak_hanging_sign", "minecraft:pale_oak_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_bamboo_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:bamboo_sign", "minecraft:bamboo_wall_sign", "minecraft:bamboo_hanging_sign", "minecraft:bamboo_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_poplar_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:poplar_sign", "minecraft:poplar_wall_sign", "minecraft:poplar_hanging_sign", "minecraft:poplar_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_crimson_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:crimson_sign", "minecraft:crimson_wall_sign", "minecraft:crimson_hanging_sign", "minecraft:crimson_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } },
+        "paint_warped_sign": { "trigger": "minecraft:item_used_on_block","conditions": { "location": { "type": "minecraft:all_of","terms": [ { "type": "minecraft:match_block","blocks":[ "minecraft:warped_sign", "minecraft:warped_wall_sign", "minecraft:warped_hanging_sign", "minecraft:warped_wall_hanging_sign" ] }, { "type": "minecraft:match_tool","predicate": { "items": "minecraft:glow_ink_sac" } } ] } } }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "ccap:logging/sign/paint_all_signs",
+        "loot": [ "ccap:reward/logging/paint_all_signs" ]
+    }
+}

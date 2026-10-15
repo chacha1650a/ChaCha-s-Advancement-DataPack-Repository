@@ -1,0 +1,33 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/crafting_table/craft_crafting_table",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_shelf"
+        },
+        "title": {
+            "text": "물품 거치대"
+        },
+        "description": {
+            "text": "아무 종류의 선반을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_any_shelf": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:oak_shelf", "minecraft:birch_shelf", "minecraft:spruce_shelf", "minecraft:acacia_shelf",
+                    "minecraft:cherry_shelf", "minecraft:jungle_shelf", "minecraft:poplar_shelf", "minecraft:dark_oak_shelf",
+                    "minecraft:mangrove_shelf", "minecraft:pale_oak_shelf", "minecraft:bamboo_shelf", "minecraft:crimson_shelf",
+                    "minecraft:warped_shelf"
+                ]
+            }
+        }
+    }
+}

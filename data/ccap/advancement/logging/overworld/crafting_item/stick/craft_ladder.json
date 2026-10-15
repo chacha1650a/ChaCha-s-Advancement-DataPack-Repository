@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/stick/craft_stick",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:ladder"
+        },
+        "title": {
+            "text": "전구 갈아끼우기"
+        },
+        "description": {
+            "text": "사다리를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_ladder": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:ladder"
+                ]
+            }
+        }
+    }
+}

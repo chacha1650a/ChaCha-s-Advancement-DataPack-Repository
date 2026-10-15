@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/bookshelf/craft_chiseled_bookshelf",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:lectern"
+        },
+        "title": {
+            "text": "수선 노가다"
+        },
+        "description": {
+            "text": "독서대를 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_lectern": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:lectern"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "parent": "ccap:logging/overworld/crafting_item/bookshelf/craft_bookshelf",
+
+    "display": {
+        "icon": {
+            "id": "minecraft:chiseled_bookshelf"
+        },
+        "title": {
+            "text": "비밀 문 만들기"
+        },
+        "description": {
+            "text": "조각된 책장을 제작하세요",
+            "color": "green"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft_chiseled_bookshelf": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipes": [
+                    "minecraft:chiseled_bookshelf"
+                ]
+            }
+        }
+    }
+}

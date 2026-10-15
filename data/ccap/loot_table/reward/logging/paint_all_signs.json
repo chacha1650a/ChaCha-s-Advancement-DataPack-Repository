@@ -1,0 +1,46 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_name",
+                            "target": "item_name",
+                            "name": { "text": "페인트통","color":"gray","italic": false }
+                        },
+                        {
+                            "type": "minecraft:set_lore",
+                            "mode": "append",
+                            "lore": [
+                                { "text": "" },
+                                { "text": "옷에 안 묻게 조심하세요!","color":"dark_purple","italic": false },
+                                { "text": "벌목 카테고리 보상","color":"#966F33","italic": false }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:profile": {
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQzNTMwY2ZmMDE3NjYzNjc4N2RmN2YyM2E1YTVmODRiMzUzYWIwMjliOGE2YmU0YWNhNzFkNDJiNzkwNTBkMSJ9fX0="
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -9,7 +9,7 @@
             "text": "지식의 힘"
         },
         "description": {
-            "text": "책을 제작하거나 얻으세요"
+            "text": "책을 얻으세요"
         },
         "frame": "task",
         "announce_to_chat": true,
